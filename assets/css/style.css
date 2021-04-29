@@ -4,6 +4,8 @@
 :root {
   --primary-red-color: rgb(230, 54, 54);
   --sec-red-color: rgb(219, 110, 110);
+  --primary-grey: rgb(94, 88, 88);
+  --secondary-grey: rgb(158, 150, 150);
   --white: #ffffff;
 }
 
@@ -531,4 +533,28 @@ a {
 
 .fa {
   color: red
+}
+
+
+.redes-container ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+ 
+  justify-content: center;
+}
+
+.redes-container ul li {
+  margin: 20px;
+}
+
+.fab {
+  font-size: 30px;
+ 
+    color: var(--secondary-grey);
+}
+
+.fab:hover {
+  font-size: 35px;
+  color: var(--primary-grey);
 }
