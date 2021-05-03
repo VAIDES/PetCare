@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
 :root {
-  --primary-red-color: rgb(230, 54, 54);
+  --primary-red-color: rgb(177, 69, 69);
   --sec-red-color: rgb(219, 110, 110);
+  --ter-red-color: #faf9f9;
   --primary-grey: rgb(94, 88, 88);
   --secondary-grey: rgb(158, 150, 150);
   --white: #ffffff;
@@ -198,42 +199,32 @@ a { text-decoration: none; }
 
 /* card details start  */
 
-section {
-    padding: 50px 0;
-}
+
 .details-card {
 	background:transparent;
+  margin-top: 5%;
 }
 
 .card-footer  {
   text-align: center;
+  background-color: var(--ter-red-color);
+
 }
+
 .btn-card{
-  background: rgb(194, 194, 191);
+  background: rgb(221, 216, 216);
   color: black;
-    box-shadow: 4px 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    padding: .84rem 2.14rem;
-    font-size: .81rem;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    margin: 0;
-    border: 0;
-    -webkit-border-radius: .125rem;
-    border-radius: .125rem;
-    cursor: pointer;
-    white-space: normal;
-    word-wrap: break-word;
-    text-decoration: none;
-    
+  border: 1px solid black;
+  box-shadow: 0 0.5rem 1rem 0 rgrgba(22, 4, 4, 0.1)
+   
 }
+
 .btn-card:hover {
     background: rgb(126, 126, 123);
     color: white;
     text-decoration: none;
 }
+
 
 /* zona de about */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -318,14 +309,14 @@ section {
 
   /**** CSS para el REGISTER.HTML **************/
   :root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: .75rem;
+    --input-padding-x: 1rem;
+    --input-padding-y: .50rem;
   }
 
   
   .register-container {
     background: #a7adb3;
-    background: linear-gradient(to right, #8a8c8f, #e6eaec);
+    background: linear-gradient(to right, #e6e8eb, #e6eaec);
   }
     
   .card-signin {
@@ -540,21 +531,94 @@ a {
   display: flex;
   list-style: none;
   padding: 20px;
- 
   justify-content: center;
 }
 
 .redes-container ul li {
-  margin: 20px;
+  margin: 5px;
 }
 
 .fab {
   font-size: 30px;
- 
-    color: var(--secondary-grey);
+  color: var(--secondary-grey);
 }
 
 .fab:hover {
-  font-size: 35px;
+  font-size: 30px;
   color: var(--primary-grey);
 }
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+#calendar{
+  width:600px;
+  margin:0 auto;
+  margin-top:2%;
+  margin-bottom:2%;
+  border-radius:5px;
+  font-family:'Open Sans',sans-serif;
+  text-align:center;
+  color:#555;
+  box-shadow:0 0 50px -14px rgba(0,0,0,.8);
+}
+
+#calendar h1{
+  background: var(--primary-red-color);
+  border-radius:5px 5px 0 0;
+  padding:20px;
+  font-size:140%;
+  font-weight:300;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#fff;
+  cursor:default;
+  text-shadow:0 0 10px rgba(0,0,0,.8);
+}
+
+#calendar table{
+  border-top:1px solid #ddd;
+  border-left:1px solid #ddd;
+  border-spacing:0;
+  border-radius:0 0 5px 5px;
+}
+
+#calendar td{
+  width:60px;
+  height:60px;
+  background:#eee;
+  border-right:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  padding:6px;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+#calendar td:hover:not(.current){
+  background:#ddd;
+}
+
+#calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
+  background:#fff;
+  color:#999;
+}
+
+#calendar .current{
+  background: var(--primary-red-color);
+  font-weight:700;
+  color:#fff;
+  text-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+#calendar .hastask{
+  font-weight:700;
+}
+
+#calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
+#calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
+
+
+
+
+
