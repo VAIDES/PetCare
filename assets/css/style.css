@@ -172,6 +172,16 @@ a { text-decoration: none; }
 .pb-5 { padding-bottom: 50px;}
 
 
+@media (Max-width: 768px) {
+  .baner {
+    display: none;
+  }
+}
+
+
+
+
+
 
 /* links de la cabecera */
 #navbar a{
