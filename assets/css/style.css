@@ -39,6 +39,17 @@ body {
     margin-left: 30px;
   }
 
+  .new-index:hover {
+    width: 250px;
+    height: 250px;
+
+  }
+
+  .pagina-principal , .about-container {
+    letter-spacing: 0.75px;
+    margin-top: 15px;
+  }
+  
 strong {
   font-weight: 800;
 }
@@ -269,6 +280,9 @@ a { text-decoration: none; }
   border-radius: 10%;
 }
 
+.about-container {
+  margin-bottom: 100px;
+}
 
 
 /* This container is needed to position the front and back side */
