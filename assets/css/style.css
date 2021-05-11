@@ -88,7 +88,9 @@ p {
   font-size: 1rem;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none; 
+}
+
 
 .large {
   font-size: 1.2rem;
