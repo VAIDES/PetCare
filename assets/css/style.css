@@ -18,11 +18,26 @@
   box-sizing: border-box;
 }
 
+
 /* Main Styling */
 html,
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+
+  footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    background-color: var(--ter-red-color);
+    color: var(--primary-grey-color);
+   
+  }
+  .logo-footer {
+    margin-left: 30px;
+  }
 
 strong {
   font-weight: 800;
@@ -479,6 +494,8 @@ a { text-decoration: none; }
     
   }
 
+
+
 .btn-outline-primary {
   color: var(--primary-red-color);
   border-color: var(--sec-red-color);
@@ -517,7 +534,9 @@ section.productos {
   
 }
 
-
+.media-title {
+  font-size: 22px;
+}
 
 .mt-50 {
   margin-top: 50px
@@ -534,6 +553,11 @@ section.productos {
 
 .productos .btn-warning {
   background-color: grey;
+  border: none;
+}
+
+.productos .btn-warning:hover {
+  background-color: rgb(94, 82, 82);
   border: none;
 }
 
