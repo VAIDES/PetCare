@@ -89,6 +89,7 @@ p {
 }
 
 a { text-decoration: none; 
+  color: #000000;
 }
 
 
@@ -688,6 +689,24 @@ a {
 #calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
 
 
+.error-page {
+  margin-top: 50px;
+}
 
+
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite ;
+  animation-name: example;
+}
+
+@keyframes example {
+ 
+  50% {    transform: translateY(0px);}
+  40% {    transform: rotate(20deg); }
+  60% {    transform: translateY(-15px); }
+}
 
 
