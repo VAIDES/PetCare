@@ -4,10 +4,11 @@
 :root {
   --primary-red-color: rgb(177, 69, 69);
   --sec-red-color: rgb(219, 110, 110);
-  --ter-red-color: #faf9f9;
+  --ter-color: #faf9f9;
   --primary-grey: rgb(94, 88, 88);
   --secondary-grey: rgb(158, 150, 150);
-  --white: #ffffff;
+  --input-padding-x: 1rem;
+  --input-padding-y: .50rem;
 }
 
 
@@ -31,14 +32,16 @@ body {
     display: flex;
     justify-content: center;
     padding: 3px;
-    background-color: var(--ter-red-color);
+    background-color: var(--ter-color);
     color: var(--primary-grey-color);
    
   }
+
   .logo-footer {
     margin-left: 30px;
   }
 
+  /* codigo para la ilustracion new */
   .new-index:hover {
     width: 250px;
     height: 250px;
@@ -156,12 +159,12 @@ a { text-decoration: none;
 }
 
 
+
 .btn-precio:hover
  {
   background: var(--primary-red-color);
-  color: #000000;
-}
-
+  color:white
+  }
 
 
 .btn-precio {
@@ -185,13 +188,6 @@ a { text-decoration: none;
   font-size: 15px;
 }
 
-.btn-w200{
-  width: 200px;
-}
-
-.bk-main {
-  background:#d6d5d3;
-}
 
 .pt-1 { padding-top: 10px;}
 .pb-1 { padding-bottom: 10px;}
@@ -201,15 +197,12 @@ a { text-decoration: none;
 .pb-5 { padding-bottom: 50px;}
 
 
+/* media query para el banner */
 @media (Max-width: 768px) {
   .baner {
     display: none;
   }
 }
-
-
-
-
 
 
 /* links de la cabecera */
@@ -224,28 +217,16 @@ a { text-decoration: none;
   padding-top: 5px;
 }
 
-
-
-#servicios {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-
-
-
-
 /* card details start  */
 
 .details-card {
-	background:transparent;
+	/*background:transparent;*/
   margin-top: 2%;
 }
 
 .card-footer  {
   text-align: center;
-  background-color: var(--ter-red-color);
+  background-color: var(--ter-color);
 
 }
 
@@ -273,9 +254,9 @@ a { text-decoration: none;
   height: 350px;
   /*border: 2px solid #f1f1f1;*/
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-
 }
 
+/* estilos para pagina about */
 
 .about-container img {
   width: 360px;
@@ -302,8 +283,6 @@ a { text-decoration: none;
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-/* About */
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
@@ -342,6 +321,7 @@ a { text-decoration: none;
   position:relative;
   height:0;
   }
+
   .map-container-5 iframe{
   left:0;
   top:0;
@@ -352,12 +332,7 @@ a { text-decoration: none;
 
 
   /**** CSS para el REGISTER.HTML **************/
-  :root {
-    --input-padding-x: 1rem;
-    --input-padding-y: .50rem;
-  }
-
-  
+ 
   .register-container {
     background: #a7adb3;
     background: linear-gradient(to right, #e6e8eb, #e6eaec);
@@ -415,6 +390,7 @@ a { text-decoration: none;
   .form-label-group>label {
     padding: var(--input-padding-y) var(--input-padding-x);
   }
+
   
   .form-label-group>label {
     position: absolute;
@@ -519,17 +495,6 @@ a { text-decoration: none;
 }
 
 
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-
-  
   /*** productos */
   
   /* el baner lo hago desaparecer en menos de 768 */
@@ -689,10 +654,11 @@ a {
 #calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
 
 
+/* para el 404 */
+
 .error-page {
   margin-top: 50px;
 }
-
 
 
 .animated {

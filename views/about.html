@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand" href="../index.html"><span class="negro">Pet</span><span class="rojo">Care</span></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="../index.html">Home </a>
           </li>
 
@@ -47,8 +47,8 @@
             <a class="nav-link" href="../views/productos.html">Productos</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="../views/about.html">Sobre Nosotros <span class="sr-only">(current)</span></a>
+          <li class="nav-item ">
+            <a class="nav-link active" href="../views/about.html">Sobre Nosotros <span class="sr-only">(current)</span></a>
           </li>
 
           
@@ -97,7 +97,11 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="about-img" src="../img/about1.jfif" widt="300"  height="350"  alt="Avatar">
+                <picture>
+                  <source media="(min-width:650px)" srcset="../img/about1.jfif" >
+                  <source media="(min-width:465px)" srcset="../img/about1-tiny.jfif" >
+                  <img class="about-img" src="../img/about1-tiny.jfif"  alt="avatar">
+                </picture>
               </div>
               <div class="flip-card-back">
                 <h1>Maria Lujan Cabrera</h1>
@@ -114,7 +118,11 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="about-img" src="../img/about2.jfif" alt="Avatar">
+                <picture>
+                  <source media="(min-width:650px)" srcset="../img/about2.jfif">
+                  <source media="(min-width:465px)" srcset="../img/about2-tiny.jfif">
+                  <img class="about-img" src="../img/about2-tiny.jfif" alt="avatar">
+                </picture>
               </div>
               <div class="flip-card-back">
                 <h1>Carlos Donatto</h1>
@@ -130,7 +138,13 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="about-img" src="../img/about4.jfif" alt="Avatar">
+
+                <picture>
+                  <source media="(min-width:650px)" srcset="../img/about4.jfif">
+                  <source media="(min-width:465px)" srcset="../img/about4-tiny.jfif">
+                  <img class="about-img" src="../img/about4-tiny.jfif" alt="avatar">
+                </picture>
+ 
               </div>
               <div class="flip-card-back">
                 <h1>Nicolas Rodriguez</h1>
